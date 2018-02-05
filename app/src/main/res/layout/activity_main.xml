@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_dark"
+            android:gravity="center|top"
+            android:text="@string/welcome_to_chemistry_quiz"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lab1" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:hint="@string/enter_your_name"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/_1_what_is_the_celsius_temperature_when_water_boils"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q1_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/a_212"
+                    android:textColor="@android:color/background_light"
+                    android:textColorLink="@android:color/holo_blue_bright" />
+
+                <RadioButton
+                    android:id="@+id/Q1_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/b_100"
+                    android:textColor="@android:color/background_light"
+                    android:textColorLink="@android:color/holo_blue_bright" />
+
+                <RadioButton
+                    android:id="@+id/Q1_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/c_32"
+                    android:textColor="@android:color/background_light"
+                    android:textColorLink="@android:color/holo_orange_light" />
+
+                <RadioButton
+                    android:id="@+id/Q1_radio_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/d_0"
+                    android:textColor="@android:color/background_light" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@id/rg_1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/boil"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#c0c0c0" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/_2_ice_is_denser_than_water_which_is_why_it_floats"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q2_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/right"
+                    android:textColor="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q2_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/wrong"
+                    android:textColor="@android:color/background_light" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text2"
+                android:layout_toRightOf="@id/rg2"
+                android:scaleType="center"
+                android:src="@drawable/ice2" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#c0c0c0" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="@string/_3_the_temperature_at_which_a_substance_changes_from_a_gas_to_liquid"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp" />
+
+            <RadioGroup
+
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/text3"
+
+                >
+
+
+                <RadioButton
+                    android:id="@+id/Q3_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/a_boiling_point"
+                    android:textColor="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q3_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/b_condensation_point"
+                    android:textColor="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q3_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/c_freezing_point"
+                    android:textColor="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q3_radio_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/d_melting_point"
+                    android:textColor="@android:color/background_light" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:src="@drawable/condensation3"
+                android:layout_toRightOf="@id/rg3"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/_4_three_states_of_matter"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Q4_radio_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_green_light"
+                android:text="@string/a_density_volume_and_weight"
+                android:textColor="@android:color/background_light"
+                android:textColorHighlight="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/Q4_radio_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_green_light"
+                android:text="@string/b_solid_liquid_and_gas"
+                android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/Q4_radio_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_green_light"
+                android:text="@string/c_water_metal_and_gases"
+                android:textColor="@android:color/background_light" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/_5_which_of_the_following_are_in_the_liquid_states_of_matter_check_all_that_apply"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/Q5_checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_green_light"
+            android:text="@string/a_ice"
+            android:textColor="@android:color/background_light" />
+
+        <CheckBox
+            android:id="@+id/Q5_checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_green_light"
+            android:text="@string/b_orange_juice"
+            android:textColor="@android:color/background_light" />
+
+        <CheckBox
+            android:id="@+id/Q5_checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_green_light"
+            android:text="@string/c_water"
+            android:textColor="@android:color/background_light" />
+
+        <CheckBox
+            android:id="@+id/Q5_checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_green_light"
+            android:text="@string/d_all_of_the_above"
+            android:textColor="@android:color/background_light" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#c0c0c0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="getScore"
+            android:text="@string/results"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/resultSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</ScrollView>

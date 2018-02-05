@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Chemistry Quiz Udacity</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="welcome_to_chemistry_quiz">Welcome to chemistry quiz</string>
+    <string name="_1_what_is_the_celsius_temperature_when_water_boils">1: What is the Celsius temperature when water boils?</string>
+    <string name="a_212">A: 212</string>
+    <string name="b_100">B: 100</string>
+    <string name="c_32">C: 32</string>
+    <string name="d_0">D: 0</string>
+    <string name="_2_ice_is_denser_than_water_which_is_why_it_floats">2: Ice is denser than water, which is why it floats.</string>
+    <string name="wrong">wrong</string>
+    <string name="right">right</string>
+    <string name="_3_the_temperature_at_which_a_substance_changes_from_a_gas_to_liquid">3: The temperature at which a substance changes from a gas to liquid.</string>
+    <string name="a_boiling_point">A: boiling point</string>
+    <string name="b_condensation_point">B: condensation point</string>
+    <string name="c_freezing_point">C: freezing point</string>
+    <string name="d_melting_point">D: melting point</string>
+    <string name="_4_three_states_of_matter">4: Three states of matter.</string>
+    <string name="a_density_volume_and_weight">A: density, volume and weight</string>
+    <string name="b_solid_liquid_and_gas">B: solid, liquid, and gas</string>
+    <string name="c_water_metal_and_gases">C: water, metal and gases</string>
+    <string name="results">results</string>
+    <string name="d_all_of_the_above">D: all of the above</string>
+    <string name="c_water">C: water</string>
+    <string name="b_orange_juice">B: orange juice</string>
+    <string name="a_ice">A: ice</string>
+    <string name="_5_which_of_the_following_are_in_the_liquid_states_of_matter_check_all_that_apply">5: Which of the following are in the liquid states of matter? Check all that apply.</string>
+</resources>
