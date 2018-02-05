@@ -35,7 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|top"
             android:background="@color/colorPrimary"
-            android:backgroundTint="@android:color/holo_green_light"
             android:hint="@string/enter_your_name"
             android:maxLines="1"
             android:textSize="20sp" />
@@ -100,10 +99,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rg_1"
                 android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/rg_1"
                 android:layout_below="@id/text1"
+                android:layout_marginLeft="25dp"
                 android:layout_toRightOf="@id/rg_1"
-                android:scaleType="fitEnd"
+                android:scaleType="fitXY"
                 android:src="@drawable/boil"
 
                 />
@@ -140,6 +142,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/holo_green_light"
                     android:text="@string/right"
+                    android:layout_marginBottom="20dp"
                     android:textColor="@android:color/background_light" />
 
                 <RadioButton
@@ -155,11 +158,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rg2"
                 android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/rg2"
                 android:layout_below="@id/text2"
+                android:layout_marginLeft="25dp"
                 android:layout_toRightOf="@id/rg2"
                 android:scaleType="center"
-                android:src="@drawable/ice2" />
+                android:src="@drawable/ice1" />
         </RelativeLayout>
 
 
@@ -186,8 +192,8 @@
                 android:id="@+id/rg3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_below="@id/text3"
+                android:orientation="vertical"
 
                 >
 
@@ -228,11 +234,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rg3"
+                android:layout_alignTop="@id/rg3"
                 android:layout_below="@id/text3"
-                android:src="@drawable/condensation3"
+                android:layout_marginLeft="25dp"
                 android:layout_toRightOf="@id/rg3"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/condensation3" />
 
         </RelativeLayout>
 
@@ -241,46 +249,66 @@
             android:layout_height="10dp"
             android:background="#c0c0c0" />
 
-        <TextView
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/_4_three_states_of_matter"
-            android:textColor="@android:color/background_light"
-            android:textSize="25sp" />
+            android:layout_height="wrap_content">
 
-        <RadioGroup
-            android:id="@+id/rg4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/Q4_radio_button1"
+            <TextView
+                android:id="@+id/text4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@android:color/holo_green_light"
-                android:text="@string/a_density_volume_and_weight"
+                android:padding="10dp"
+                android:text="@string/_4_three_states_of_matter"
                 android:textColor="@android:color/background_light"
-                android:textColorHighlight="@android:color/background_light" />
+                android:textSize="25sp" />
 
-            <RadioButton
-                android:id="@+id/Q4_radio_button2"
+            <RadioGroup
+                android:id="@+id/rg4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@android:color/holo_green_light"
-                android:text="@string/b_solid_liquid_and_gas"
-                android:textColor="@android:color/background_light" />
+                android:layout_below="@id/text4"
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/Q4_radio_button3"
+                <RadioButton
+                    android:id="@+id/Q4_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/a_density_volume_and_weight"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHighlight="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q4_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/b_solid_liquid_and_gas"
+                    android:textColor="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/Q4_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_green_light"
+                    android:text="@string/c_water_metal_and_gases"
+                    android:textColor="@android:color/background_light" />
+
+
+            </RadioGroup>
+
+            <ImageView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@android:color/holo_green_light"
-                android:text="@string/c_water_metal_and_gases"
-                android:textColor="@android:color/background_light" />
-
-        </RadioGroup>
+                android:layout_alignBottom="@id/rg4"
+                android:layout_alignTop="@id/rg4"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/rg4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/matter1" />
+        </RelativeLayout>
 
         <View
             android:id="@+id/view"
@@ -320,36 +348,41 @@
             android:text="@string/c_water"
             android:textColor="@android:color/background_light" />
 
-        <CheckBox
-            android:id="@+id/Q5_checkbox4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@android:color/holo_green_light"
-            android:text="@string/d_all_of_the_above"
-            android:textColor="@android:color/background_light" />
 
 
         <View
             android:layout_width="fill_parent"
             android:layout_height="10dp"
             android:background="#c0c0c0" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="getScore"
+            android:text="@string/results"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+        <Button
+            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/buttonshape"
             android:onClick="getScore"
-            android:text="@string/results"
+            android:text="@string/reset"
             android:textColor="@android:color/background_light"
             android:textSize="15sp" />
+</RelativeLayout>
 
-        <TextView
-            android:id="@+id/resultSummary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp" />
     </LinearLayout>
 
 </ScrollView>

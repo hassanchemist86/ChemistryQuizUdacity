@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton Q2_radiobutton1, Q2_Radiobutton2;
     RadioButton Q3_radiobutton1, Q3_radiobutton2, Q3_radiobutton3, Q3_radiobutton4;
     RadioButton Q4_radiobutton1, Q4_radiobutton2, Q4_radiobutton3;
-    CheckBox Q5_ch1, Q5_ch2, Q5_ch3, Q5_ch4;
+    CheckBox Q5_ch1, Q5_ch2, Q5_ch3;
     String message;
 
     @Override
@@ -46,14 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Q4_radiobutton2 = (RadioButton) findViewById(R.id.Q4_radio_button2);
         Q4_radiobutton3 = (RadioButton) findViewById(R.id.Q4_radio_button3);
 
-
         Q5_ch1 = (CheckBox) findViewById(R.id.Q5_checkbox1);
         Q5_ch2 = (CheckBox) findViewById(R.id.Q5_checkbox2);
         Q5_ch3 = (CheckBox) findViewById(R.id.Q5_checkbox3);
-        Q5_ch4 = (CheckBox) findViewById(R.id.Q5_checkbox4);
-
     }
-
 
     public int getScore(View view) {
 
@@ -67,12 +63,10 @@ public class MainActivity extends AppCompatActivity {
         Boolean answerQ3 = AnswerQ3.isChecked();
         RadioButton AnswerQ4 = findViewById(R.id.Q4_radio_button2);
         Boolean answerQ4 = AnswerQ4.isChecked();
-
         CheckBox AnswerQ5ch1 = findViewById(R.id.Q5_checkbox1);
         boolean answerQ5 = AnswerQ5ch1.isChecked();
         CheckBox AnswerQ5ch2 = findViewById(R.id.Q5_checkbox3);
         boolean answerQ5ch2 = AnswerQ5ch2.isChecked();
-
 
         int score = 0;
         if (answerQ1) {
@@ -93,14 +87,19 @@ public class MainActivity extends AppCompatActivity {
         if (answerQ5ch2) {
             score = score + 1;
         }
-
-
-        message = " Hi " + name + " your score is: " + score;
-
-
-
+        message = " Hi " + name + " your score is: " + score + " out of 10";
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
 
+        if (score >= 8) {
+            Toast.makeText(this, "Congratulations !! your grade is Excellent", Toast.LENGTH_LONG).show();
+        } else if (score >= 6)
+            Toast.makeText(this, "Great job !! your grade is GOOD", Toast.LENGTH_LONG).show();
+        else if (score >= 5) {
+            Toast.makeText(this, "well done !! your grade is pass", Toast.LENGTH_LONG).show();
+
+        } else {
+            Toast.makeText(this, "You should study hard", Toast.LENGTH_LONG).show();
+        }
 
         return score;
 

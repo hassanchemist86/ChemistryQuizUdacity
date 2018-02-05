@@ -25,4 +25,5 @@
     <string name="b_orange_juice">B: orange juice</string>
     <string name="a_ice">A: ice</string>
     <string name="_5_which_of_the_following_are_in_the_liquid_states_of_matter_check_all_that_apply">5: Which of the following are in the liquid states of matter? Check all that apply.</string>
+    <string name="reset">Reset</string>
 </resources>
