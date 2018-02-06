@@ -50,7 +50,7 @@
                 android:padding="10dp"
                 android:text="@string/_1_what_is_the_celsius_temperature_when_water_boils"
                 android:textColor="@android:color/background_light"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <RadioGroup
                 android:id="@+id/rg_1"
@@ -127,7 +127,7 @@
                 android:padding="10dp"
                 android:text="@string/_2_ice_is_denser_than_water_which_is_why_it_floats"
                 android:textColor="@android:color/background_light"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <RadioGroup
                 android:id="@+id/rg2"
@@ -140,9 +140,9 @@
                     android:id="@+id/Q2_radio_button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     android:buttonTint="@android:color/holo_green_light"
                     android:text="@string/right"
-                    android:layout_marginBottom="20dp"
                     android:textColor="@android:color/background_light" />
 
                 <RadioButton
@@ -185,7 +185,7 @@
                 android:padding="10dp"
                 android:text="@string/_3_the_temperature_at_which_a_substance_changes_from_a_gas_to_liquid"
                 android:textColor="@android:color/background_light"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <RadioGroup
 
@@ -260,7 +260,7 @@
                 android:padding="10dp"
                 android:text="@string/_4_three_states_of_matter"
                 android:textColor="@android:color/background_light"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <RadioGroup
                 android:id="@+id/rg4"
@@ -322,7 +322,7 @@
             android:padding="10dp"
             android:text="@string/_5_which_of_the_following_are_in_the_liquid_states_of_matter_check_all_that_apply"
             android:textColor="@android:color/background_light"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/Q5_checkbox1"
@@ -354,7 +354,25 @@
             android:layout_width="fill_parent"
             android:layout_height="10dp"
             android:background="#c0c0c0" />
-<RelativeLayout
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6: Distilled water is (Acid , Base, Neutral)"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/sixth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:hint="@string/write_your_answer_here"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+        <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -371,17 +389,18 @@
             android:textColor="@android:color/background_light"
             android:textSize="15sp" />
         <Button
-            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_margin="15dp"
             android:background="@drawable/buttonshape"
-            android:onClick="getScore"
+            android:onClick="RESET"
             android:text="@string/reset"
             android:textColor="@android:color/background_light"
             android:textSize="15sp" />
 </RelativeLayout>
+
 
     </LinearLayout>
 

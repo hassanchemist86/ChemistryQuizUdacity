@@ -20,10 +20,14 @@
     <string name="b_solid_liquid_and_gas">B: solid, liquid, and gas</string>
     <string name="c_water_metal_and_gases">C: water, metal and gases</string>
     <string name="results">results</string>
-    <string name="d_all_of_the_above">D: all of the above</string>
     <string name="c_water">C: water</string>
     <string name="b_orange_juice">B: orange juice</string>
     <string name="a_ice">A: ice</string>
     <string name="_5_which_of_the_following_are_in_the_liquid_states_of_matter_check_all_that_apply">5: Which of the following are in the liquid states of matter? Check all that apply.</string>
     <string name="reset">Reset</string>
+    <string name="write_your_answer_here">write your answer here</string>
+    <string name="M1">Congratulations !! your grade is Excellent</string>
+    <string name="M2">Great job !! your grade is GOOD</string>
+    <string name="M3">well done !! your grade is pass</string>
+    <string name="M4">You should study hard</string>
 </resources>
